@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=/Netflix.website/#/" />
+    <script>
+      (function() {
+        var repo = '/Netflix.website';
+        var path = location.pathname;
+        var tail = path.startsWith(repo) ? path.slice(repo.length) : '/';
+        var redirectUrl = repo + '/#' + tail + location.search + location.hash;
+        location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+  </html>
+
+
